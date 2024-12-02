@@ -1,113 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedthanan Hankhompong - Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Miss Sedthanan Hankhompong</h1>
+            <p>📞 095-634-8383 | 📧 sedthnn8h@gmail.com | 🌐 <a href="https://sedthananh.github.io/" target="_blank">Website</a></p>
+            <p>📍 19/6 Green-Park, Mueang Lamphun District, Lamphun, 51000</p>
+            <button class="download-btn" onclick="downloadCV()">Download CV</button>
+        </header>
 
-<!-- MAIN CONTAINER -->
-<div id="main_container">
-  <!-- HEADER -->
-  <div id="header">
-    <!-- LOGOTYPE/NAME -->
-    <div class="header_logotype_container">
-      <h1 class="logotype_name">Sedthanan <span class="purple">Hankhompong</span></h1>
-      <h2 class="logotype_occupation">Data Analyst</h2>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="#summary">Summary</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+        </nav>
+
+        <!-- Summary Section -->
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>
+                Data Science Intern with a strong interest in data analytics, market analysis, and inventory management...
+                <button class="toggle-btn" onclick="toggleContent('summary-detail')">Read More</button>
+            </p>
+            <p id="summary-detail" class="hidden">
+                Experienced in data analysis, machine learning, and data visualization with proficiency in Python, SQL, and libraries like Pandas and Scikit-Learn...
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>2022 - Present:</strong> Bachelor of Science in Data Science, Chiang Mai University</li>
+                <li><strong>2019 - 2022:</strong> Science-Mathematics Program, Chak kham Kanathon Lamphun School</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, R, SQL, Java, Scala, C++, HTML</li>
+                <li><strong>Tools:</strong> Tableau, Power BI, Matplotlib, etc.</li>
+                <li><strong>Languages:</strong> Thai (Native), English (Good)</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>2024:</strong> Hotel Mate - Application for hotel recommendations
+                    <button class="project-btn" onclick="openProject('https://github.com/sedthananh/hotel-mate')">View Project</button>
+                </li>
+                <li>
+                    <strong>2023:</strong> Student Performance Prediction using ML
+                    <button class="project-btn" onclick="openProject('https://github.com/sedthananh/student-performance')">View Project</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li><strong>2024:</strong> SuperAI Engineer Season 4</li>
+                <li><strong>2024:</strong> English Certificate EF SET - C1 Advanced</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© 2024 Sedthanan Hankhompong. Built with HTML, CSS, & JavaScript.</p>
+        </footer>
     </div>
-    <!-- MAIN MENU -->
-    <div class="header_menu_container">
-      <ul class="download_print_buttons horizontal_list">
-        <li><a href="#"><span class="icon entypo-download"></span>Download CV</a></li>
-        <li><a href="#"><span class="icon entypo-print"></span>Print CV</a></li>
-      </ul>
-      <div class="clear"></div>
-      <ul class="header_menu horizontal_list">
-        <li><a class="no_border purple" href="#">Profile</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Achievements</a></li>
-        <li><a href="#">Activities</a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- LEFT COL -->
-  <div id="left_col">
-    <div class="profile_frame">
-      <div class="profile_picture"></div>
-    </div>
-    <div class="hello_content">
-      <h2>Hello!</h2>
-      <p>I am a Data Science Intern with a strong passion for data analytics, market analysis, and inventory management.</p>
-    </div>
-    <div class="contact_details_content">
-      <h2>Contact details</h2>
-      <p class="purple">Phone:</p>
-      <p>095-634-8383</p>
-      <p class="purple">Email:</p>
-      <p>sedthnn8h@gmail.com</p>
-      <p class="purple">Website:</p>
-      <p><a href="https://sedthananh.github.io/">https://sedthananh.github.io/</a></p>
-      <p class="purple">Address:</p>
-      <p>19/6 Green-Park, Mueang Lamphun District</p>
-      <p>Lamphun, 51000</p>
-    </div>
-    <a href="mailto:sedthnn8h@gmail.com" class="send_message_button">
-      <span class="cut1"></span>
-      <span class="cut2"></span>
-      <span class="content">Send me a message <span class="fontawesome-double-angle-right"></span></span>
-    </a>
-  </div>
-  <!-- PROFILE CONTENT -->
-  <div id="content_container">
-    <div class="block">
-      <h1>Profile</h1>
-      <p>Data Science Intern with expertise in Python, SQL, and data visualization tools. Proficient in analyzing and presenting data-driven insights for strategic decision-making.</p>
-    </div>
-    <div class="block">
-      <h2>Education</h2>
-      <ul>
-        <li>Bachelor of Science in Data Science, Chiang Mai University (2022 - Present)</li>
-        <li>Major: Data analytics using Computational Modeling</li>
-        <li>Minor: Business Administration Program in Marketing</li>
-        <li>Chak kham Kanathon Lamphun School, Science-Mathematics Program (2019 - 2022)</li>
-      </ul>
-    </div>
-    <div class="block">
-      <h2>Skills</h2>
-      <ul>
-        <li>Programming: Python, R, SQL, Java, Scala, C++, HTML</li>
-        <li>Tools: Tableau, Power BI, RStudio, Kaggle</li>
-        <li>Languages: Thai (Native), English (Advanced, CEFR C1)</li>
-      </ul>
-    </div>
-    <div class="block">
-      <h2>Projects</h2>
-      <ul>
-        <li>Hotel Mate: Developed a hotel recommendation application.</li>
-        <li>Student Performance Prediction: Machine Learning model using Kaggle dataset.</li>
-        <li>Caterpillar Survival Analysis: Insights into habitat management for butterfly conservation.</li>
-      </ul>
-    </div>
-    <div class="block">
-      <h2>Achievements</h2>
-      <ul>
-        <li>SuperAI Engineer Season 4: Forecasting Electricity Consumption.</li>
-        <li>English Certificate EF SET: CEFR C1 Advanced.</li>
-      </ul>
-    </div>
-    <div class="block">
-      <h2>Activities</h2>
-      <ul>
-        <li>Journey to Data Universe: Advanced data analysis program.</li>
-        <li>Main Host: Christmas Day Event 2023.</li>
-        <li>Freshmen Event Staff: Organized and guided activities.</li>
-      </ul>
-    </div>
-  </div>
-  <div class="clear"></div>
-  <!-- FOOTER -->
-  <div id="footer">
-    <p class="footer_name">Sedthanan Hankhompong CV 2024</p>
-  </div>
-</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
