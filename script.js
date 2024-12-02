@@ -13,3 +13,21 @@ function downloadCV() {
     link.download = 'SedthananHankhompong_CV.pdf';
     link.click();
 }
+
+function changeLanguage() {
+    const selectedLang = document.getElementById("language").value;
+    const allElements = document.querySelectorAll("[data-lang]");
+
+    allElements.forEach((element) => {
+        if (element.getAttribute("data-lang") === selectedLang) {
+            element.classList.remove("hidden");
+        } else {
+            element.classList.add("hidden");
+        }
+    });
+}
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
