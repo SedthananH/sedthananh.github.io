@@ -1,10 +1,11 @@
+/* General styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f0f8ff;
+    color: #243B53; /* สีน้ำเงินเข้ม */
+    background-color: #FBE3C4; /* สีเบจ */
 }
 
 .container {
@@ -13,11 +14,12 @@ body {
     padding: 20px;
 }
 
+/* Header styles */
 .header {
     text-align: center;
     padding: 20px 0;
-    background: linear-gradient(to right, #1e90ff, #87cefa);
-    color: white;
+    background: linear-gradient(to right, #3EDCCA, #BFD6D9); /* สีเขียว -> สีฟ้าอ่อน */
+    color: #243B53; /* สีน้ำเงินเข้ม */
     border-radius: 8px;
 }
 
@@ -26,12 +28,12 @@ body {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid white;
+    border: 3px solid #BFD6D9; /* สีฟ้าอ่อน */
 }
 
 .download-btn {
-    background: #1e90ff;
-    color: white;
+    background: #3EDCCA; /* สีเขียว */
+    color: #243B53; /* สีน้ำเงินเข้ม */
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -41,12 +43,12 @@ body {
 }
 
 .download-btn:hover {
-    background: #4682b4;
+    background: #2F4F6E; /* สีน้ำเงินเข้มอีกเฉด */
 }
 
 /* Navbar styles */
 .navbar {
-    background: #4682b4;
+    background: #2F4F6E; /* สีน้ำเงินเข้มอีกเฉด */
     color: white;
     padding: 10px;
     display: flex;
@@ -65,12 +67,12 @@ body {
 }
 
 .navbar a:hover {
-    background: #1e90ff;
+    background: #536878; /* สีฟ้าเทา */
 }
 
 /* Section styles */
 section {
-    background: #ffffff;
+    background: #FFFFFF; /* สีขาว */
     margin: 20px 0;
     padding: 15px;
     border-radius: 8px;
@@ -79,12 +81,12 @@ section {
 
 section h2 {
     margin-top: 0;
-    color: #1e90ff;
+    color: #2F4F6E; /* สีน้ำเงินเข้มอีกเฉด */
 }
 
 .project-btn, .toggle-btn {
-    background: #1e90ff;
-    color: white;
+    background: #3EDCCA; /* สีเขียว */
+    color: #243B53; /* สีน้ำเงินเข้ม */
     border: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -92,5 +94,15 @@ section h2 {
 }
 
 .project-btn:hover, .toggle-btn:hover {
-    background: #4682b4;
+    background: #536878; /* สีฟ้าเทา */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #243B53; /* สีน้ำเงินเข้ม */
+    color: white;
+    border-radius: 8px;
 }
