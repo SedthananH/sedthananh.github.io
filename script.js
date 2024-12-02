@@ -10,7 +10,7 @@ function openProject(url) {
 function downloadCV() {
     const link = document.createElement('a');
     link.href = 'Resume_SedthananH.pdf';
-    link.download = 'SedthananHankhompong_CV.pdf';
+    link.download = 'Resume_SedthananH.pdf';
     link.click();
 }
 
