@@ -26,12 +26,11 @@ body {
 .profile-pic {
     width: 100px;
     height: 100px;
-    border-radius: 10%;
+    border-radius: 8px; /* กรอบสี่เหลี่ยมมุมมน */
     margin-bottom: 10px;
-    border: 2px solid #BFD6D9; /* สีฟ้าอ่อน */
+    border: 3px solid #536878; /* กรอบฟ้าเทา */
     object-fit: cover;
 }
-
 
 .download-btn {
     background: #3EDCCA; /* สีเขียว */
@@ -42,15 +41,17 @@ body {
     cursor: pointer;
     font-size: 1rem;
     margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .download-btn:hover {
-    background: #2F4F6E; /* สีน้ำเงินเข้มอีกเฉด */
+    background: #243B53; /* สีน้ำเงินเข้ม */
+    color: #FFFFFF; /* สีข้อความ */
 }
 
 /* Navbar styles */
 .navbar {
-    background: #2F4F6E; /* สีน้ำเงินเข้มอีกเฉด */
+    background: #2F4F6E; /* สีน้ำเงินเข้ม */
     color: white;
     padding: 10px;
     display: flex;
@@ -72,6 +73,11 @@ body {
     background: #536878; /* สีฟ้าเทา */
 }
 
+.navbar a.active {
+    background: #3EDCCA; /* สีเขียว */
+    color: #243B53; /* สีน้ำเงินเข้ม */
+}
+
 /* Section styles */
 section {
     background: #FFFFFF; /* สีขาว */
@@ -83,7 +89,7 @@ section {
 
 section h2 {
     margin-top: 0;
-    color: #2F4F6E; /* สีน้ำเงินเข้มอีกเฉด */
+    color: #2F4F6E; /* สีน้ำเงินเข้ม */
 }
 
 .project-btn, .toggle-btn {
@@ -93,10 +99,42 @@ section h2 {
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .project-btn:hover, .toggle-btn:hover {
-    background: #536878; /* สีฟ้าเทา */
+    background: #243B53; /* สีน้ำเงินเข้ม */
+    color: #FFFFFF; /* สีข้อความ */
+}
+
+/* Language Selector */
+.language-selector {
+    margin-top: 10px;
+    display: inline-block;
+    background: #FFFFFF; /* สีพื้นหลังขาว */
+    color: #243B53; /* สีน้ำเงินเข้ม */
+    border: 2px solid #BFD6D9; /* กรอบฟ้าอ่อน */
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.language-selector select {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #243B53; /* สีข้อความ */
+    outline: none;
+}
+
+.language-selector select:hover {
+    color: #3EDCCA; /* สีเขียวเมื่อ hover */
+}
+
+/* Hide/show content for language toggle */
+.hidden {
+    display: none;
 }
 
 /* Footer styles */
