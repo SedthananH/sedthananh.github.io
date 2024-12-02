@@ -18,7 +18,7 @@ body {
 .header {
     text-align: center;
     padding: 20px 0;
-    background: linear-gradient(to right, #3EDCCA, #BFD6D9); /* สีเขียว -> สีฟ้าอ่อน */
+    background: #3EDCCA; /* สีเขียว */
     color: #243B53; /* สีน้ำเงินเข้ม */
     border-radius: 8px;
 }
