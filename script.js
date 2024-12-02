@@ -15,9 +15,10 @@ function downloadCV() {
 }
 
 function changeLanguage() {
-    const selectedLang = document.getElementById("language").value;
+    const selectedLang = document.getElementById("language").value; // ภาษาเลือก
     const allElements = document.querySelectorAll("[data-lang]");
 
+    // ซ่อนหรือแสดงข้อความตามภาษาที่เลือก
     allElements.forEach((element) => {
         if (element.getAttribute("data-lang") === selectedLang) {
             element.classList.remove("hidden");
