@@ -9,14 +9,14 @@
 <body>
     <div class="container">
         <!-- Header Section -->
-
         <header class="header">
             <img src="images/photo.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Miss Sedthanan Hankhompong</h1>
-            <p>📞 095-634-8383 | 📧 <a href="mailto:sedthnn8h@gmail.com">sedthnn8h@gmail.com</a> | 🌐 <a href="https://sedthananh.github.io/" target="_blank">sedthananh.github.io</a></p>
-            <p>📍 19/6 Green-Park, Mueang Lamphun District, Lamphun, 51000</p>
-            <button class="download-btn" onclick="downloadCV()">Download CV</button>
-            <!-- Language Selector -->
+            <h1 data-lang="en">Miss Sedthanan Hankhompong</h1>
+            <h1 data-lang="th" class="hidden">นางสาวเศรษฐนันท์ หาญคมพงศ์</h1>
+            <p data-lang="en">📞 095-634-8383 | 📧 <a href="mailto:sedthnn8h@gmail.com">sedthnn8h@gmail.com</a> | 🌐 <a href="https://sedthananh.github.io/" target="_blank">Website</a></p>
+            <p data-lang="th" class="hidden">📞 095-634-8383 | 📧 <a href="mailto:sedthnn8h@gmail.com">sedthnn8h@gmail.com</a> | 🌐 <a href="https://sedthananh.github.io/" target="_blank">เว็บไซต์</a></p>
+            <p data-lang="en">📍 19/6 Green-Park, Mueang Lamphun District, Lamphun, 51000</p>
+            <p data-lang="th" class="hidden">📍 19/6 กรีนพาร์ค อำเภอเมืองลำพูน จังหวัดลำพูน 51000</p>
             <div class="language-selector">
                 <label for="language">🌐 Language:</label>
                 <select id="language" onchange="changeLanguage()">
@@ -28,89 +28,99 @@
 
         <!-- Navigation Bar -->
         <nav class="navbar">
-            <a href="#summary">Summary</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#activities">Activities</a>
+            <a href="#summary" data-lang="en">Summary</a>
+            <a href="#summary" data-lang="th" class="hidden">สรุป</a>
+            <a href="#education" data-lang="en">Education</a>
+            <a href="#education" data-lang="th" class="hidden">การศึกษา</a>
+            <a href="#skills" data-lang="en">Skills</a>
+            <a href="#skills" data-lang="th" class="hidden">ทักษะ</a>
+            <a href="#projects" data-lang="en">Projects</a>
+            <a href="#projects" data-lang="th" class="hidden">โครงการ</a>
+            <a href="#achievements" data-lang="en">Achievements</a>
+            <a href="#achievements" data-lang="th" class="hidden">ความสำเร็จ</a>
+            <a href="#activities" data-lang="en">Activities</a>
+            <a href="#activities" data-lang="th" class="hidden">กิจกรรม</a>
         </nav>
 
         <!-- Summary Section -->
         <section id="summary">
-            <h2>Summary</h2>
-            <p>
-                Data Science Intern with a strong interest in data analytics, market analysis, and inventory management. Experienced in data analysis, machine learning, and data visualization with proficiency in Python, SQL, and libraries like Pandas and Scikit-Learn. Skilled at extracting insights from complex data sets to support marketing strategies and optimize decision-making. Adept at presenting data-driven recommendations to both technical and business teams.
-            </p>
+            <h2 data-lang="en">Summary</h2>
+            <h2 data-lang="th" class="hidden">สรุป</h2>
+            <p data-lang="en">Data Science Intern with a strong interest in data analytics, market analysis, and inventory management...</p>
+            <p data-lang="th" class="hidden">นักศึกษาฝึกงานด้านวิทยาศาสตร์ข้อมูลที่สนใจการวิเคราะห์ข้อมูล การวิเคราะห์ตลาด และการจัดการสินค้าคงคลัง...</p>
         </section>
 
         <!-- Education Section -->
         <section id="education">
-            <h2>Education</h2>
+            <h2 data-lang="en">Education</h2>
+            <h2 data-lang="th" class="hidden">การศึกษา</h2>
             <ul>
-                <li><strong>2022 - Present:</strong> Bachelor of Science in Data Science, Chiang Mai University (GPA: 3.06)</li>
-                <li><strong>2019 - 2022:</strong> Science-Mathematics Program, Chak kham Kanathon Lamphun School (GPA: 3.56)</li>
+                <li data-lang="en"><strong>2022 - Present:</strong> Bachelor of Science in Data Science, Chiang Mai University (GPA: 3.06)</li>
+                <li data-lang="th" class="hidden"><strong>2565 - ปัจจุบัน:</strong> วิทยาศาสตรบัณฑิต สาขาวิทยาการข้อมูล มหาวิทยาลัยเชียงใหม่ (เกรดเฉลี่ย 3.06)</li>
+                <li data-lang="en"><strong>2019 - 2022:</strong> Science-Mathematics Program, Chak Kham Kanathon Lamphun School (GPA: 3.56)</li>
+                <li data-lang="th" class="hidden"><strong>2562 - 2565:</strong> โปรแกรมวิทย์-คณิต โรงเรียนจักรคำคณาทร ลำพูน (เกรดเฉลี่ย 3.56)</li>
             </ul>
         </section>
 
         <!-- Skills Section -->
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 data-lang="en">Skills</h2>
+            <h2 data-lang="th" class="hidden">ทักษะ</h2>
             <ul>
-                <li><strong>Programming Languages:</strong> Python, R, SQL, Java, Scala, C++, HTML</li>
-                <li><strong>Programming Tools:</strong> RStudio, VisualStudio, JupyterLab, Weka, RapidMiner, Microsoft Office (Word, PowerPoint, Excel), Google Colab, GitHub, Hugging Face, Kaggle</li>
-                <li><strong>Data Visualization & BI Tools:</strong> Tableau, Power BI, Matplotlib, Figma, Canva, LookerStudio</li>
-                <li><strong>Critical Thinking:</strong> Problem-solving</li>
-                <li><strong>Communication:</strong> Effective Communication</li>
-                <li><strong>Time Management:</strong> Prioritization</li>
-                <li><strong>Collaboration:</strong> Teamwork</li>
-                <li><strong>Leadership:</strong> Delegation</li>
-                <li><strong>Languages:</strong> Thai (Native), English (Immediate)</li>
+                <li data-lang="en"><strong>Programming Languages:</strong> Python, R, SQL, Java, Scala, C++, HTML</li>
+                <li data-lang="th" class="hidden"><strong>ภาษาโปรแกรม:</strong> Python, R, SQL, Java, Scala, C++, HTML</li>
+                <li data-lang="en"><strong>Tools:</strong> Tableau, Power BI, Matplotlib, Figma, Canva, LookerStudio</li>
+                <li data-lang="th" class="hidden"><strong>เครื่องมือ:</strong> Tableau, Power BI, Matplotlib, Figma, Canva, LookerStudio</li>
             </ul>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
-            <h2>Projects</h2>
+            <h2 data-lang="en">Projects</h2>
+            <h2 data-lang="th" class="hidden">โครงการ</h2>
             <ul>
-                <li>
-                    <strong>Hotel Mate:</strong> Developed Hotel Mate, an application for hotel and accommodation recommendations, leveraging data engineering to create a personalized recommendation system.
-                    <button class="project-btn" onclick="openProject('https://github.com/sedthananh/hotel-mate')">View Project</button>
-                </li>
-                <li>
-                    <strong>Student Performance Prediction:</strong> Utilized a Machine Learning model to predict student performance using a dataset from Kaggle, and created an infographic to highlight pattern recognition insights.
-                    <button class="project-btn" onclick="openProject('https://github.com/sedthananh/student-performance')">View Project</button>
-                </li>
-                <li>
-                    <strong>Comparative Analysis:</strong> Analyzed caterpillar survival rates across various mustard varieties using ANOVA. This analysis revealed insights crucial for Cabbage White Butterfly conservation, emphasizing the significance of plant selection in habitat management.
-                    <button class="project-btn" onclick="openProject('https://github.com/sedthananh/caterpillar-analysis')">View Project</button>
-                </li>
+                <li data-lang="en"><strong>Hotel Mate:</strong> Developed Hotel Mate, an application for hotel and accommodation recommendations, leveraging data engineering to create a personalized recommendation system. <button class="project-btn" onclick="openProject('https://github.com/sedthananh/hotel-mate')">View Project</button></li>
+                <li data-lang="th" class="hidden"><strong>Hotel Mate:</strong> พัฒนาแอปพลิเคชัน Hotel Mate สำหรับแนะนำโรงแรมและที่พัก โดยใช้วิศวกรรมข้อมูลเพื่อสร้างระบบแนะนำส่วนบุคคล <button class="project-btn" onclick="openProject('https://github.com/sedthananh/hotel-mate')">ดูโครงการ</button></li>
+                <li data-lang="en"><strong>Student Performance Prediction:</strong> Utilized a Machine Learning model to predict student performance using a dataset from Kaggle, and created an infographic to highlight pattern recognition insights. <button class="project-btn" onclick="openProject('https://github.com/sedthananh/student-performance')">View Project</button></li>
+                <li data-lang="th" class="hidden"><strong>Student Performance Prediction:</strong> ใช้โมเดล Machine Learning เพื่อทำนายผลการศึกษาของนักเรียนจากชุดข้อมูล Kaggle และสร้างกราฟฟิกอินโฟกราฟิกเพื่อแสดงผลการวิเคราะห์แบบจำลอง <button class="project-btn" onclick="openProject('https://github.com/sedthananh/student-performance')">ดูโครงการ</button></li>
+                <li data-lang="en"><strong>Comparative Analysis:</strong> Analyzed caterpillar survival rates across various mustard varieties using ANOVA. This analysis revealed insights crucial for Cabbage White Butterfly conservation. <button class="project-btn" onclick="openProject('https://github.com/sedthananh/caterpillar-analysis')">View Project</button></li>
+                <li data-lang="th" class="hidden"><strong>Comparative Analysis:</strong> วิเคราะห์อัตราการอยู่รอดของหนอนผีเสื้อกระหล่ำปลีจากพันธุ์มัสตาร์ดต่างๆ โดยใช้ ANOVA การวิเคราะห์นี้เปิดเผยข้อมูลที่สำคัญสำหรับการอนุรักษ์ผีเสื้อกระหล่ำปลี <button class="project-btn" onclick="openProject('https://github.com/sedthananh/caterpillar-analysis')">ดูโครงการ</button></li>
             </ul>
         </section>
 
         <!-- Achievements Section -->
         <section id="achievements">
-            <h2>Achievements</h2>
+            <h2 data-lang="en">Achievements</h2>
+            <h2 data-lang="th" class="hidden">ความสำเร็จ</h2>
             <ul>
-                <li><strong>SuperAI Engineer Season 4:</strong> Participated in Forecasting Electricity Consumption challenge</li>
-                <li><strong>English Certificate EF SET:</strong> CEFR C1 Advanced</li>
+                <li data-lang="en"><strong>SuperAI Engineer Season 4:</strong> Participated in the Forecasting Electricity Consumption challenge.</li>
+                <li data-lang="th" class="hidden"><strong>SuperAI Engineer Season 4:</strong> เข้าร่วมการแข่งขันการทำนายการใช้ไฟฟ้า</li>
+                <li data-lang="en"><strong>English Certificate EF SET:</strong> CEFR C1 Advanced</li>
+                <li data-lang="th" class="hidden"><strong>ใบรับรองภาษาอังกฤษ EF SET:</strong> CEFR C1 ขั้นสูง</li>
             </ul>
         </section>
 
         <!-- Activities Section -->
         <section id="activities">
-            <h2>Activities</h2>
+            <h2 data-lang="en">Activities</h2>
+            <h2 data-lang="th" class="hidden">กิจกรรม</h2>
             <ul>
-                <li>Participated in "Journey to Data Universe" for advanced data analysis</li>
-                <li>Hosted Christmas Day event and organized activities</li>
-                <li>Staff member for Freshmen event planning and scholarship assistance</li>
+                <li data-lang="en">Participated in "Journey to Data Universe" for advanced data analysis.</li>
+                <li data-lang="th" class="hidden">เข้าร่วม "Journey to Data Universe" สำหรับการวิเคราะห์ข้อมูลขั้นสูง</li>
+                <li data-lang="en">Hosted Christmas Day event and organized activities.</li>
+                <li data-lang="th" class="hidden">เป็นเจ้าภาพงานวันคริสต์มาสและจัดกิจกรรมต่างๆ</li>
+                <li data-lang="en">Staff member for Freshmen event planning and scholarship assistance.</li>
+                <li data-lang="th" class="hidden">เป็นเจ้าหน้าที่ในการวางแผนกิจกรรมต้อนรับนักศึกษาใหม่และช่วยเหลือทุนการศึกษา</li>
             </ul>
         </section>
 
+        <!-- Footer Section -->
         <footer>
-            <p>© 2024 Sedthanan Hankhompong. Built with HTML, CSS, & JavaScript.</p>
+            <p data-lang="en">© 2024 Sedthanan Hankhompong. Built with HTML, CSS, & JavaScript.</p>
+            <p data-lang="th" class="hidden">© 2567 เศรษฐนันท์ หาญคมพงศ์. สร้างด้วย HTML, CSS และ JavaScript</p>
         </footer>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
