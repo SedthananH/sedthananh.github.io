@@ -117,15 +117,15 @@ section h2 {
     color: #243B53;  /* สีน้ำเงินเข้ม */
     border: 2px solid #BFD6D9;  /* กรอบฟ้าอ่อน */
     border-radius: 8px;
-    padding: 5px;
-    font-size: 1rem;
+    padding: 4px 8px;  /* ลดขนาด padding */
+    font-size: 0.8rem;  /* ลดขนาดฟอนต์ */
     cursor: pointer;
 }
 
 .language-selector select {
     border: none;
     background: transparent;
-    font-size: 1rem;
+    font-size: 0.8rem;  /* ขนาดฟอนต์ใน select */
     color: #243B53;
     outline: none;
 }
@@ -133,6 +133,7 @@ section h2 {
 .language-selector select:hover {
     color: #3EDCCA;  /* สีเขียวเมื่อ hover */
 }
+
 
 
 /* Hide/show content for language toggle */
