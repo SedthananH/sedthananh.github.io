@@ -1,126 +1,147 @@
-<link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Ocat</title>
+  <meta name="description" content="simple CV example created with HTML and CSS">
+  <meta name="author" content="Fly Nerd">
+  <link rel="icon" href="./img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<!-- MAIN CONTAINER -->
-		<div id="main_container">
-      <!-- HEADER -->
-      <div id="header">
-        <!-- LOGOTYPE/NAME -->
-        <div class="header_logotype_container">
-          <h1 class="logotype_name">Javier <span class="purple">Latorre</span></h1>
-          <h2 class="logotype_occupation">Frontend Web Developer</h2>
+<body>
+  <header>
+    <div>
+      <img src="./img/avatar.jpg" />
+    </div>
+    <h1>Ocat Verdigris</h1>
+    <section>
+      <p>Hello! I am Ocat Verdigris. I work as interface and front-end developer. I have passion for pixel perfect, minimal and easy to use interfaces. I'm  focused, dedicated, hard-working and willing to learn in a changing and challenging environment.</p>
+      <a href="https://www.facebook.com/flynerdpl/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.twitter.com/flynerdpl/" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/ritaly" target="_blank">
+        <i class="fab fa-github-alt"></i>
+      </a>
+      <a href="https://www.instagram.com/flynerdpl/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ritalyczywek/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </section>
+  </header>
+  <main>
+    <section>
+      <h3>Courses & Workshops</h3>
+      <article class='course'>
+        <div class='title'>
+          <h4>Udacity: Intro to HTML and CSS</h4>
         </div>
-        <!-- MAIN MENU -->
-        <div class="header_menu_container">
-          <ul class="download_print_buttons horizontal_list">
-            <li><a href="#"><span class="icon entypo-download"></span>Download CV</a></li>
-            <li><a href="#"><span class="icon entypo-print"></span>Print CV</a></li>
-          </ul>
-          <div class="clear"></div>
-          <ul class="header_menu horizontal_list">
-            <li><a class="no_border purple" href="#">Profile</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Work Experience</a></li>
-            <li><a href="#">Featured Projects</a></li>
-            <li><a href="#">Awards</a></li>
-          </ul>
+        <div class="descrition">
+          <p>Build styled, well-structured websites. Learn how to use HTML5 standard to create websites. Understand CSS syntax, selectors, and units. Learn about code editors and a browser's Developer Tools.</p>
         </div>
-      </div>
-      <!-- LEFT COL -->
-      <div id="left_col">
-        <div class="profile_frame">
-          <div class="profile_picture"></div>
-          <!-- <img src="images/javier_latorre.jpg" alt="profile picture"> -->
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>Udemy: The Web Developer Bootcamp</h4>
         </div>
-        <div class="hello_content">
-          <h2>Hello!</h2>
-          <p>I'm passionate about technology and human behavior, hardworker and a fast-learner with experience in around 10 different countries studying, working and volunteering.</p>
+        <div class="descrition">
+          <p>Learn how to create full-stack web applications from scratch using HTML, CSS, JavaScript, jQuery, VanillaJS, NodeJS, MongoDB.</p>
         </div>
-        <div class="contact_details_content">
-          <h2>Contact details</h2>
-          <p class="purple">Phone:</p>
-          <p>+34 123 456 789</p>
-          <p class="purple">Email:</p>
-          <p>jlalovi@gmail.com</p>
-          <p class="purple">Adress:</p>
-          <p>Someplace, 5</p>
-          <p>Jaén, Spain</p>
-          <p>23001</p>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>EdX: Web Programming with JavaScript</h4>
         </div>
-        <a href="mailto:jlalovi@gmail.com" class="send_message_button">
-          <span class="cut1"></span>
-          <span class="cut2"></span>
-          <span class="content">Send me a message <span class="fontawesome-double-angle-right"></span></span>
-        </a>
-        <div class="get_social_content">
-          <h2>Get social</h2>
-          <ul class="social_icons horizontal_list">
-            <li><a class="facebook" href="https://www.facebook.com/jlalovi"><span class="entypo-facebook-circled"></span><span class="invisible">Facebook</span></a></li>
-            <li><a class="twitter" href="https://twitter.com/jlalovi"><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li>
-            <li><a class="linkedin" href="https://www.linkedin.com/in/jlalovi/en"><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
-          </ul>
+        <div class="descrition">
+          <p>Learn how to create web apps and prototypes with JavaScript, represent and exchange data using JavaScript Object Notation (JSON), and how to access RESTful APIs on the web.</p>
         </div>
-      </div>
-      <!-- PROFILE CONTENT -->
-      <div id="content_container">				
-        <div class="block">
-          <h1>Profile</h1>
-          <blockquote class="profile_quote">
-            <p>"There is no end to education. It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are born to the moment you die, is a process of learning."</p>
-            <p>Jiddu Krishnamurti.</p>
-            <span class="entypo-quote"></span>
-          </blockquote>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>Django Girls: 2-Day Workshops</h4>
         </div>
-        <div class="block">
-          <h2>A few words about me</h2>
-          <p>Until now, in my life, I change from active moments with a lot of variety, challenges and improvisations, to moments of tranquility and stability, being difficult to stay in a place during a long time. I consider myself a tolerant and respectful person with open mind and quite honest. I really like to listen people stories and backgrounds and their different experiences around the world.</p>				
+        <div class="descrition">
+          <p>Learn back-end development with simple blog application using Django  framework.</p>
         </div>
-        <div class="horizontal_line">
-          <div class="line_left"></div>
-          <div class="left_circle"></div>
-          <div class="central_circle"></div>
-          <div class="right_circle"></div>
-          <div class="line_right"></div>
-        </div>
-        <div class="block">
-          <h2>Philosophy</h2>
-          <p>I belive in ethic and moral not in imposed rules that you "have to" do or follow.</p>
-          <div class="philosophy_content">
-            <p>I believe life is made from different shades of grey, not from black and white. Furthermore, as a human being with rationality, I think it is our duty to take care of the world and treat others as one would like others to treat oneself. This way of perceiving reality affects my beliefs and my way of behaving. Summarizing on several points:</p>
-            <ul>
-              <li>Pragmatic</li>
-              <li>Honest</li>
-              <li>Respectful</li>
-              <li>Open-minded</li>
-              <li>Coherent</li>
-            </ul>
-            <div class="clear"></div>
-          </div>
-        </div>
-        <div class="horizontal_line">
-          <div class="line_left"></div>
-          <div class="left_circle"></div>
-          <div class="central_circle"></div>
-          <div class="right_circle"></div>
-          <div class="line_right"></div>
-        </div>
-        <div class="last block">
-          <h2>Interests & Hobbies</h2>
-          <p>I'm passionate about technology and human behavior, both determine almost all my interests and hobbies:</p>
+      </article>
+    </section>
+    <section>
+      <h3>Skills</h3>
+      <div class='skills'>
+        <div class='column'>
+          <h4>Good knowledge</h4>
           <ul>
-            <li>Visiting new places</li>
-            <li>Meeting people</li>
-            <li>Having new experiences</li>
-            <li>Hiking and Biking</li>
-            <li>Web Developing</li>
-            <li>Computer Gamming</li>
-            <li>Manga and Anime</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript ES5/6</li>
+            <li>SQL</li>
           </ul>
         </div>
+        <div class='column'>
+          <h4>Basic knowledge</h4>
+          <ul>
+            <li>jQuery</li>
+            <li>NodeJS</li>
+            <li>MongoDB</li>
+            <li>Django</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Languages</h4>
+          <p>🇵🇱 Polish - Native speaker</p>
+          <p>🇬🇧 English - Proficient C1/C2</p>
+          <p>🇫🇷 French - Advanced - C1</p>
+          <p>🇪🇸 Spanish - Intermediate - B1/B2</p>
+          <p>🇩🇪 German - Elementary / Communicative - A2</p>
+        </div>
       </div>
-      <div class="clear"></div>
-      <!-- FOOTER -->
-      <div id="footer">
-        <p class="footer_name">Javier Latorre CV 2015</p>
-      </div>
-		</div>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <article>
+        <div class='school'>
+          <span>2015-2018</span> <strong>Octocats tech academy</strong>
+        </div>
+        <div class="descrition">
+          Bechelor Degree of Octorobotics
+        </div>
+      </article>
+      <article>
+        <div class='school'>
+          <span>2012-2015</span> <strong>Underwater kittens high school</strong>
+        </div>
+        <div>
+          Main subject: Cathemathics
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>Experience</h3>
+      <article>
+        <div class='job-title'>
+          <span>03.2018 - 06.2018</span> <strong>Tentacles Company</strong><br> <strong>Position:</strong> Web developer Intern
+        </div>
+        <div>
+          <p><strong>Tech stack:</strong> HTML5 / CSS / JavaScript / jQuery</p>
+          <ul class="job-description">
+            <li>Develop web application for Octopoda departments</li>
+            <li>Implement UI (front-end site) based on received graphic design and requirements</li>
+            <li>Co-operate with the back-end team </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Created by: <a href="https://www.flynerd.pl/">@flynerd</a>  / <a href="https://www.linkedin.com/in/ritalyczywek/">LinkedIn</a> / 2018 </p>
+  </footer>
+</body>
+</html>
