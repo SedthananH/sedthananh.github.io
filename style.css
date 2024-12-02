@@ -1,40 +1,110 @@
-/* Layout styles for 2-column design */
-.two-column {
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #243B53; /* สีน้ำเงินเข้ม */
+    background-color: #FBE3C4; /* สีเบจ */
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #3EDCCA, #BFD6D9); /* สีเขียว -> สีฟ้าอ่อน */
+    color: #243B53; /* สีน้ำเงินเข้ม */
+    border-radius: 8px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #BFD6D9; /* สีฟ้าอ่อน */
+    object-fit: cover;
+}
+
+
+.download-btn {
+    background: #3EDCCA; /* สีเขียว */
+    color: #243B53; /* สีน้ำเงินเข้ม */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.download-btn:hover {
+    background: #2F4F6E; /* สีน้ำเงินเข้มอีกเฉด */
+}
+
+/* Navbar styles */
+.navbar {
+    background: #2F4F6E; /* สีน้ำเงินเข้มอีกเฉด */
+    color: white;
+    padding: 10px;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 8px;
     margin-top: 20px;
 }
 
-/* Style for the left and right columns */
-.column-left,
-.column-right {
-    flex: 1;
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background: #536878; /* สีฟ้าเทา */
+}
+
+/* Section styles */
+section {
     background: #FFFFFF; /* สีขาว */
+    margin: 20px 0;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensuring headers and content align */
-.column-left h2,
-.column-right h2 {
-    color: #2F4F6E; /* สีน้ำเงินเข้ม */
+section h2 {
     margin-top: 0;
+    color: #2F4F6E; /* สีน้ำเงินเข้มอีกเฉด */
 }
 
-/* Section specific styles */
-.column-left ul,
-.column-right ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.project-btn, .toggle-btn {
+    background: #3EDCCA; /* สีเขียว */
     color: #243B53; /* สีน้ำเงินเข้ม */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/* Profile picture as square */
-.profile-pic {
-    width: 100px;
-    height: 100px;
-    border: 3px solid #BFD6D9; /* สีฟ้าอ่อน */
-    border-radius: 8px; /* กรอบสี่เหลี่ยม */
-    object-fit: cover;
+.project-btn:hover, .toggle-btn:hover {
+    background: #536878; /* สีฟ้าเทา */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #243B53; /* สีน้ำเงินเข้ม */
+    color: white;
+    border-radius: 8px;
 }
