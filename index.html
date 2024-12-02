@@ -1,195 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sedthanan Hankhompong's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #e3f2fd;
-            color: #333;
-        }
-        header {
-            background-color: #1e88e5;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0d47a1;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #90caf9;
-            color: black;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .intro, .about, .skills, .projects, .achievements, .activities, .contact {
-            background-color: #fff;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        h2 {
-            color: #1e88e5;
-        }
-        .projects .project {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-        }
-        .project img {
-            width: 30%;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #0d47a1;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-</head>
-<body>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
 
-<header>
-    <h1>Sedthanan Hankhompong</h1>
-    <p>Bachelor of Science in Data Science, Chiang Mai University</p>
-</header>
-
-<nav>
-    <a href="#intro">Introduction</a>
-    <a href="#about">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#activities">Activities</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="intro" class="intro">
-    <h2>Introduction</h2>
-    <p>Data Science Intern with a strong interest in marketing analytics, financial analysis, and inventory management. Experienced in data analysis, machine learning, and data visualization with proficiency in Python, SQL, and libraries like Pandas and Scikit-Learn. I am skilled at extracting insights from complex data sets to support marketing strategies and optimizing financial decision-making. Adept at presenting data-driven recommendations to both technical and business teams.</p>
-</section>
-
-<section id="about" class="about">
-    <h2>About Me</h2>
-    <img src="images/photo.jpg" alt="Sedthanan Hankhompong's Photo" width="150" style="border-radius: 50%; display: block; margin: 0 auto;">
-    <p><strong>Name:</strong> Sedthanan Hankhompong (เสฎฐนันท์ หาญขำพงษ์)</p>
-    <p><strong>Sex:</strong> Female</p>
-    <p><strong>Birth:</strong> 08 August 2003</p>
-    <p><strong>Age:</strong> 21</p>
-    <p><strong>Height:</strong> 160 cm</p>
-    <p><strong>Weight:</strong> 68 kg</p>
-</section>
-
-<section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li><strong>Programming Languages:</strong> Python, R, SQL, Java, Scala, C++</li>
-        <li><strong>Programming Tools:</strong> RStudio, VisualStudio, Weka, RapidMiner, Microsoft Office (Word, PowerPoint, Excel), Google Colab</li>
-        <li><strong>Data Visualization & BI Tools:</strong> Tableau, Power BI, ggplot2, Matplotlib, Figma, Canva</li>
-        <li><strong>Critical Thinking:</strong> Problem-solving</li>
-        <li><strong>Communication:</strong> Effective Communication</li>
-        <li><strong>Time Management:</strong> Prioritization</li>
-        <li><strong>Collaboration:</strong> Teamwork</li>
-        <li><strong>Leadership:</strong> Delegation</li>
-        <li><strong>Languages:</strong> Thai (Native), English (Proficient)</li>
-    </ul>
-</section>
-
-<section id="projects" class="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <strong>2024 Hotel Mate, Developing an Application for Hotel and Accommodation Recommendations</strong>
-            <a href="presentation/hotel_presentation.pdf" target="_blank">View Presentation</a>
-                <img src="images/hotel.png" alt="Hotel Mate Project" width="30%" style="border-radius: 8px;">
-            </a>
-            <p>Developed Hotel Mate, an application for hotel and accommodation recommendations, leveraging data engineering to create a personalized recommendation system.</p>
-        </li>
-        <img src="images/project2024.png" alt="Project Image" style="width: 150px;">
-        <li><strong>2024 Student Performance Prediction by Using Machine Learning Model</strong>
-            <p>Utilized a Machine Learning model to predict student performance using a dataset from Kaggle, and created an infographic to highlight pattern recognition insights.</p>
-        </li>
-        <img src="images/project2023.png" alt="Project Image" style="width: 150px;">
-        <li><strong>2023 Comparative Analysis of Caterpillar Survival Rates Based on the Consumption of Different Mustard Varieties: Broccoli, Cabbage, and Wild Mustard</strong>
-            <p>Analyzed caterpillar survival rates across various mustard varieties using ANOVA. This analysis revealed insights crucial for Cabbage White Butterfly conservation, emphasizing the significance of plant selection in habitat management.</p>
-        </li>
-    </ul>
-</section>
-
-
-<section id="achievements" class="achievements">
-    <h2>Achievements</h2>
-    <p><strong>2024 SuperAI Engineer Season 4</strong></p>
-    <ul>
-        <li>Participated in the Forecasting Electricity Consumption challenge at the Data Science 36 HRS Hackathon, focusing on predictive analytics in energy consumption</li>
-        <li>Achieved baseline performance in the Northern Thai to Central Thai Machine Translation competition, demonstrating proficiency in language processing.</li>
-    </ul>
-    <p><strong>2024 English Certificate EF SET</strong></p>
-    <ul>
-        <img src="images/EF-SET-Certificate.png" alt="Certificate" width="30%" style="border-radius: 8px;">
-        <li>CEFR: C1 Advanced</li>
-    </ul>
-</section>
-
-<section id="activities" class="activities">
-    <h2>Activities</h2>
-    <ul>
-        <li>
-            <strong>PRESENT Beyond Coding: 2024</strong>
-            </a>
-            <p>Actively participating in the Beyond Coding: 2024 initiative to qualify for intensive online training and pitching sessions.</p>
-        </li>
-        <li>
-            <strong>PRESENT Data Universe</strong>
-            </a>
-            <p>Currently enrolled in the Journey to Data Universe program, focusing on advanced data analysis for coding professionals.</p>
-        </li>
-        <li>
-            <strong>2023 Christmas Day Event Hosting</strong>
-                <img src="images/S_113614858.png" alt="Christmas Event" width="30%" style="border-radius: 8px;">
-            </a>
-            <p>Served as the main host for the Christmas Day event, responsible for coordinating the program, engaging the audience, and ensuring the event ran smoothly.</p>
-        </li>
-        <li>
-            <strong>2023 Freshmen Event Organization</strong>
-                <img src="images/S_113614854_0.png" alt="Freshmen Event" width="30%" style="border-radius: 8px;">
-            </a>
-            <p>Planned and organized activities as staff members for the Freshmen event, facilitating interactive activities and guiding new students through each station.</p>
-        </li>
-        <li>
-            <strong>2022-2023 Student Development Division</strong>
-            </a>
-            <p>Worked with the student development division part at the Faculty of Science for one year, assisting with scholarship-related tasks and supporting administrative functions.</p>
-        </li>
-    </ul>
-</section>
-
-<section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>095-634-8383 · sedthnn8h@gmail.com · website: <a href="https://sedthananh.github.io/" target="_blank">https://sedthananh.github.io/</a></p>
-    <p>19/6 Green-Park, Mueang Lamphun District, Lamphun, 51000</p>
-</section>
-    
-</body>
-</html>
+<!-- MAIN CONTAINER -->
+		<div id="main_container">
+      <!-- HEADER -->
+      <div id="header">
+        <!-- LOGOTYPE/NAME -->
+        <div class="header_logotype_container">
+          <h1 class="logotype_name">Javier <span class="purple">Latorre</span></h1>
+          <h2 class="logotype_occupation">Frontend Web Developer</h2>
+        </div>
+        <!-- MAIN MENU -->
+        <div class="header_menu_container">
+          <ul class="download_print_buttons horizontal_list">
+            <li><a href="#"><span class="icon entypo-download"></span>Download CV</a></li>
+            <li><a href="#"><span class="icon entypo-print"></span>Print CV</a></li>
+          </ul>
+          <div class="clear"></div>
+          <ul class="header_menu horizontal_list">
+            <li><a class="no_border purple" href="#">Profile</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Work Experience</a></li>
+            <li><a href="#">Featured Projects</a></li>
+            <li><a href="#">Awards</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- LEFT COL -->
+      <div id="left_col">
+        <div class="profile_frame">
+          <div class="profile_picture"></div>
+          <!-- <img src="images/javier_latorre.jpg" alt="profile picture"> -->
+        </div>
+        <div class="hello_content">
+          <h2>Hello!</h2>
+          <p>I'm passionate about technology and human behavior, hardworker and a fast-learner with experience in around 10 different countries studying, working and volunteering.</p>
+        </div>
+        <div class="contact_details_content">
+          <h2>Contact details</h2>
+          <p class="purple">Phone:</p>
+          <p>+34 123 456 789</p>
+          <p class="purple">Email:</p>
+          <p>jlalovi@gmail.com</p>
+          <p class="purple">Adress:</p>
+          <p>Someplace, 5</p>
+          <p>Jaén, Spain</p>
+          <p>23001</p>
+        </div>
+        <a href="mailto:jlalovi@gmail.com" class="send_message_button">
+          <span class="cut1"></span>
+          <span class="cut2"></span>
+          <span class="content">Send me a message <span class="fontawesome-double-angle-right"></span></span>
+        </a>
+        <div class="get_social_content">
+          <h2>Get social</h2>
+          <ul class="social_icons horizontal_list">
+            <li><a class="facebook" href="https://www.facebook.com/jlalovi"><span class="entypo-facebook-circled"></span><span class="invisible">Facebook</span></a></li>
+            <li><a class="twitter" href="https://twitter.com/jlalovi"><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/in/jlalovi/en"><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- PROFILE CONTENT -->
+      <div id="content_container">				
+        <div class="block">
+          <h1>Profile</h1>
+          <blockquote class="profile_quote">
+            <p>"There is no end to education. It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are born to the moment you die, is a process of learning."</p>
+            <p>Jiddu Krishnamurti.</p>
+            <span class="entypo-quote"></span>
+          </blockquote>
+        </div>
+        <div class="block">
+          <h2>A few words about me</h2>
+          <p>Until now, in my life, I change from active moments with a lot of variety, challenges and improvisations, to moments of tranquility and stability, being difficult to stay in a place during a long time. I consider myself a tolerant and respectful person with open mind and quite honest. I really like to listen people stories and backgrounds and their different experiences around the world.</p>				
+        </div>
+        <div class="horizontal_line">
+          <div class="line_left"></div>
+          <div class="left_circle"></div>
+          <div class="central_circle"></div>
+          <div class="right_circle"></div>
+          <div class="line_right"></div>
+        </div>
+        <div class="block">
+          <h2>Philosophy</h2>
+          <p>I belive in ethic and moral not in imposed rules that you "have to" do or follow.</p>
+          <div class="philosophy_content">
+            <p>I believe life is made from different shades of grey, not from black and white. Furthermore, as a human being with rationality, I think it is our duty to take care of the world and treat others as one would like others to treat oneself. This way of perceiving reality affects my beliefs and my way of behaving. Summarizing on several points:</p>
+            <ul>
+              <li>Pragmatic</li>
+              <li>Honest</li>
+              <li>Respectful</li>
+              <li>Open-minded</li>
+              <li>Coherent</li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="horizontal_line">
+          <div class="line_left"></div>
+          <div class="left_circle"></div>
+          <div class="central_circle"></div>
+          <div class="right_circle"></div>
+          <div class="line_right"></div>
+        </div>
+        <div class="last block">
+          <h2>Interests & Hobbies</h2>
+          <p>I'm passionate about technology and human behavior, both determine almost all my interests and hobbies:</p>
+          <ul>
+            <li>Visiting new places</li>
+            <li>Meeting people</li>
+            <li>Having new experiences</li>
+            <li>Hiking and Biking</li>
+            <li>Web Developing</li>
+            <li>Computer Gamming</li>
+            <li>Manga and Anime</li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <!-- FOOTER -->
+      <div id="footer">
+        <p class="footer_name">Javier Latorre CV 2015</p>
+      </div>
+		</div>
