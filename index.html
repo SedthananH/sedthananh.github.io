@@ -1,126 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sedthanan Hankhompong - Resume</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <img src="images/photo.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Miss Sedthanan Hankhompong</h1>
-            <h2>Bachelor of Science in Data Science, Chiang Mai University</h2>
-            <p>📞 095-634-8383 | 📧 <a href="mailto:sedthnn8h@gmail.com">sedthnn8h@gmail.com</a> | 🌐 <a href="https://sedthananh.github.io/" target="_blank">Website</a></p>
-            <p>📍 19/6 Green-Park, Mueang Lamphun District, Lamphun, 51000</p>
-        </header>
+<div class="container">
+    <!-- Header Section -->
+    <header class="header">
+        <img src="images/photo.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Miss Sedthanan Hankhompong</h1>
+        <h2>Bachelor of Science in Data Science, Chiang Mai University</h2>
+        <p>📞 095-634-8383 | 📧 <a href="mailto:sedthnn8h@gmail.com">sedthnn8h@gmail.com</a> | 🌐 <a href="https://sedthananh.github.io/" target="_blank">Website</a></p>
+        <p>📍 19/6 Green-Park, Mueang Lamphun District, Lamphun, 51000</p>
+        <p>🎂 08/08/2003</p>
+    </header>
 
-<section id="summary">
-    <h2>Summary</h2>
-    <p>
-        Data Science Intern with a strong interest in data analytics, market analysis, and inventory management. Experienced in data analysis, machine learning, and data visualization with proficiency in Python, SQL, and libraries like Pandas and Scikit-Learn. Skilled at extracting insights from complex data sets to support marketing strategies and optimize decision-making.
-    </p>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <strong>Hotel Mate:</strong> Developed an application for hotel and accommodation recommendations. The project focuses on personalized recommendation systems using advanced data engineering techniques.
-    </div>
-    <div class="project">
-        <strong>Student Performance Prediction:</strong> Applied machine learning models to analyze student performance data, highlighting patterns with effective visualizations.
-    </div>
-    <div class="project">
-        <strong>Comparative Analysis:</strong> Investigated caterpillar survival across mustard varieties to support butterfly conservation efforts.
-    </div>
-</section>
-
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <a href="#summary">Summary</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#activities">Activities</a>
-        </nav>
-
-        <!-- Summary Section -->
-        <section id="summary">
+    <!-- Two-column layout -->
+    <div class="two-column">
+        <!-- Left Column -->
+        <div class="column-left">
             <h2>Summary</h2>
             <p>
                 Data Science Intern with a strong interest in data analytics, market analysis, and inventory management...
-                <button class="toggle-btn" onclick="toggleContent('summary-detail')">Read More</button>
             </p>
-            <p id="summary-detail" class="hidden">
-                Experienced in data analysis, machine learning, and data visualization with proficiency in Python, SQL, and libraries like Pandas and Scikit-Learn. Skilled at extracting insights from complex data sets to support marketing strategies and optimize decision-making. Adept at presenting data-driven recommendations to both technical and business teams.
-            </p>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>2022 - Present:</strong> Bachelor of Science in Data Science, Chiang Mai University (GPA: 3.06)</li>
-                <li><strong>2019 - 2022:</strong> Science-Mathematics Program, Chak kham Kanathon Lamphun School (GPA: 3.56)</li>
-            </ul>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li><strong>Programming Languages:</strong> Python, R, SQL, Java, Scala, C++, HTML</li>
-                <li><strong>Tools:</strong> Tableau, Power BI, Matplotlib, Figma, Canva, LookerStudio</li>
+                <li><strong>Programming:</strong> Python, R, SQL, Java, etc.</li>
+                <li><strong>Tools:</strong> Tableau, Power BI, etc.</li>
                 <li><strong>Languages:</strong> Thai (Native), English (C1 Advanced)</li>
             </ul>
-        </section>
+        </div>
 
-        <!-- Projects Section -->
-        <section id="projects">
+        <!-- Right Column -->
+        <div class="column-right">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Science in Data Science, Chiang Mai University (2022 - Present)</li>
+                <li>Science-Mathematics Program, Chak Kham Kanathon Lamphun School (2019 - 2022)</li>
+            </ul>
             <h2>Projects</h2>
             <ul>
-                <li>
-                    <strong>Hotel Mate:</strong> Application for hotel recommendations
-                    <button class="project-btn" onclick="openProject('https://github.com/sedthananh/hotel-mate')">View Project</button>
-                </li>
-                <li>
-                    <strong>Student Performance Prediction:</strong> Using Machine Learning
-                    <button class="project-btn" onclick="openProject('https://github.com/sedthananh/student-performance')">View Project</button>
-                </li>
-                <li>
-                    <strong>Comparative Analysis:</strong> Caterpillar survival rates based on mustard varieties
-                    <button class="project-btn" onclick="openProject('https://github.com/sedthananh/caterpillar-analysis')">View Project</button>
-                </li>
+                <li><strong>Hotel Mate:</strong> Application for hotel recommendations.</li>
+                <li><strong>Student Performance Prediction:</strong> Machine learning to predict results.</li>
+                <li><strong>Comparative Analysis:</strong> Studying caterpillar survival rates.</li>
             </ul>
-        </section>
-
-        <!-- Achievements Section -->
-        <section id="achievements">
-            <h2>Achievements</h2>
-            <ul>
-                <li><strong>SuperAI Engineer Season 4:</strong> Participated in Forecasting Electricity Consumption challenge</li>
-                <li><strong>English Certificate EF SET:</strong> CEFR C1 Advanced</li>
-            </ul>
-        </section>
-
-        <!-- Activities Section -->
-        <section id="activities">
-            <h2>Activities</h2>
-            <ul>
-                <li>Participated in "Journey to Data Universe" for advanced data analysis</li>
-                <li>Hosted Christmas Day event and organized activities</li>
-                <li>Staff member for Freshmen event planning and scholarship assistance</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>© 2024 Sedthanan Hankhompong. Built with HTML, CSS, & JavaScript.</p>
-        </footer>
+        </div>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
+</div>
 
