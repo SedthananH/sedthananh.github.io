@@ -32,22 +32,25 @@ body {
     object-fit: cover;
 }
 
+/* ปรับสไตล์ปุ่มดาวน์โหลด CV */
 .download-btn {
-    background: #3EDCCA; /* สีเขียว */
-    color: #243B53; /* สีน้ำเงินเข้ม */
+    background: #243B53; /* สีน้ำเงินเข้ม */
+    color: #FFFFFF; /* สีขาว */
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
     margin-top: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* เพิ่ม transition เพื่อทำให้การเปลี่ยนสีราบรื่น */
 }
 
+/* เมื่อเอาเมาส์ไปวาง */
 .download-btn:hover {
-    background: #243B53; /* สีน้ำเงินเข้ม */
-    color: #FFFFFF; /* สีข้อความ */
+    background: #3EDCCA; /* สีเขียว */
+    color: #243B53; /* สีน้ำเงินเข้ม */
 }
+
 
 /* Navbar styles */
 .navbar {
