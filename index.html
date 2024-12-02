@@ -9,13 +9,21 @@
 <body>
     <div class="container">
         <!-- Header Section -->
+
         <header class="header">
             <img src="images/photo.jpg" alt="Profile Picture" class="profile-pic">
             <h1>Miss Sedthanan Hankhompong</h1>
-            <p>📞 095-634-8383 | 📧 <a href="mailto:sedthnn8h@gmail.com">sedthnn8h@gmail.com</a> | 🌐 <a href="https://sedthananh.github.io/" target="_blank">sedthananh.github.io
-</a></p>
+            <p>📞 095-634-8383 | 📧 <a href="mailto:sedthnn8h@gmail.com">sedthnn8h@gmail.com</a> | 🌐 <a href="https://sedthananh.github.io/" target="_blank">sedthananh.github.io</a></p>
             <p>📍 19/6 Green-Park, Mueang Lamphun District, Lamphun, 51000</p>
             <button class="download-btn" onclick="downloadCV()">Download CV</button>
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <label for="language">🌐 Language:</label>
+                <select id="language" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="th">ไทย</option>
+                </select>
+            </div>
         </header>
 
         <!-- Navigation Bar -->
